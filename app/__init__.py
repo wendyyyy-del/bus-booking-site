@@ -27,7 +27,7 @@ def create_app():
         
         CORS(
             app,
-            resources={r"/api/*": {"origins": ["https://your-production-domain.com"]}},
+                resources={r"/api/*": {"origins": ["http://localhost:3000"]}},
             supports_credentials=True
         )
     else:
